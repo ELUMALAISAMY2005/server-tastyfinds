@@ -17,12 +17,12 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(process.cwd(), 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(process.cwd(), 'public', 'home.html'));
+  res.send("This is server side");
 });
 
-app.get('/recipe', (req, res) => {
-  res.sendFile(path.join(process.cwd(), 'public', 'recipe.html'));
-});
+// app.get('/recipe', (req, res) => {
+//   res.sendFile(path.join(process.cwd(), 'public', 'recipe.html'));
+// });
 
 app.post('/signup', async (req, res) => {
   try {
