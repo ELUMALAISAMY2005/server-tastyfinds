@@ -8,7 +8,7 @@ import bcrypt from "bcrypt";
 
 userModel
 const app = express();
-mongoose.connect("mongodb+srv://ELUMALAISAMY2005:password2005@cluster0.4p9v8n6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
+mongoose.connect("mongodb+srv://ELUMALAISAMY2005:elu2005@cluster0.4p9v8n6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
   console.log("Connected to MongoDB");
 }).catch((err) => console.log(err))
 
